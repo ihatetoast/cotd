@@ -91,7 +91,6 @@ class App extends React.Component {
 					<Header tagline="Fresh Seafood Market"/>
 		
 					<ul className="list-of-fishes">
-				{/*key is for react. index is for me to pass down*/}
 						{Object
 							.keys(this.state.fishes)
 							.map(key => <Fish key={key} index={key} addToOrder={this.addToOrder} details={this.state.fishes[key]}/>)
